@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Red de Programas Deportes</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://d3js.org/d3-time.v1.min.js"></script>
+   <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+   <script src="https://d3js.org/d3-color.v1.min.js"></script>
+   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  </head>
+  <body>
+      <h1> Programas de Maestría para la Facultad de Ingeniería con Presencia en Ámbitos Deportivos </h1>
+      <h3> Tarea 5 (Redes), Maestría en Ingeniería de Información - Stanley Melo Fontalvo (ss.melo@uniandes.edu.co) </h3>
+      <p>Usando una base de datos de los estudiantes de posgrado de la Facultad de Ingeniería de la Universidad de los Andes, <br>
+         se crea un diagrama de redes en el que se evidencia la relación y presencia deportiva entre los programas y los diferentes<br>
+         deportes de ofrece la Univerdidad. Especificamentes para programas de maestrías de la Facultad de Ingeniería
+      </p>
+      <p>Podras indagar:
+          <ul>
+            <li>Cual es el deporte favorito</li>
+            <li>La relación de un deporte y los programas asociados</li>
+            <li>Cantidad de estudiantes por programa que tengan cursos de deporte inscritos</li>
+            <li>Que deportes se inscriben por programa</li>
+          </ul>
+      </p>
+
+      <svg width="1000"
+           height="500"
+           id="network">
+      </svg>
+
+      <h3>Instrucciones:</h3>
+      <p>
+          <ul>
+            <li>Los círculos de color azul representan los programas, y su tamaño varia en razón al número de estudiantes inscritos</li>
+            <li>Los círculos anaranjados representan los cursos de deportes que ofrece la Universidad</li>
+            <li>Podemos resaltar la relación entre un programa y los deportes en los que incursiona, siempre que acerquemos el <br/>
+                puntero del mouse a el circulo que lo referencia, ademas, tendremos una descrpcion del programa y la cantidad de <br/>
+                inscritos en este mismo evento</li>
+          </ul>
+      </p>
+
+      <h3>Referencias:</h3>
+      <p> Para el desarrollo de esta visualizacón nos apoyamos en:
+          <ul>
+            <li>D3 Force-Directed Graph (Mike Bostock): https://beta.observablehq.com/@mbostock/d3-force-directed-graph</li>
+            <li>Redes y Peliculas (Jairo Ruiz Saenz): https://github.com/jairoruizsaenz/Relaciones-Peliculas</li>
+          </ul>
+      </p>
+      <script src="js/log_net.js"></script>
+  </body>
+</html>
